@@ -51,8 +51,8 @@ public class KuromojiNeologdPluginTest {
             public void build(final int number, final Builder settingsBuilder) {
                 settingsBuilder.put("http.cors.enabled", true);
                 settingsBuilder.put("http.cors.allow-origin", "*");
-                settingsBuilder.putList("discovery.seed_hosts", "127.0.0.1:9301");
-                settingsBuilder.putList("cluster.initial_master_nodes", "127.0.0.1:9301");
+                settingsBuilder.putList("discovery.seed_hosts", "127.0.0.1:9300");
+                settingsBuilder.putList("cluster.initial_master_nodes", "127.0.0.1:9300");
             }
         }).build(newConfigs().clusterName(clusterName).numOfNode(numOfNode)
                 .pluginTypes("org.codelibs.elasticsearch.kuromoji.ipadic.neologd.KuromojiNeologdPlugin"));
