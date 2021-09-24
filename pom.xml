@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.codelibs</groupId>
 	<artifactId>elasticsearch-analysis-kuromoji-ipadic-neologd</artifactId>
-	<version>7.5.1</version>
+	<version>7.15.0</version>
 	<packaging>jar</packaging>
 	<description>This plugin provides an analysis library for Kuromoji with UniDic and Neologd.</description>
 	<inceptionYear>2011</inceptionYear>
@@ -26,23 +26,23 @@
 		<version>9</version>
 	</parent>
 	<properties>
-		<elasticsearch.version>7.5.1</elasticsearch.version>
+		<elasticsearch.version>7.15.0</elasticsearch.version>
 		<elasticsearch.plugin.classname>org.codelibs.elasticsearch.kuromoji.ipadic.neologd.KuromojiNeologdPlugin</elasticsearch.plugin.classname>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<lucene.version>8.2.0</lucene.version>
-		<kuromoji-ipadic-neologd.version>20191230</kuromoji-ipadic-neologd.version>
+		<kuromoji-ipadic-neologd.version>20200120</kuromoji-ipadic-neologd.version>
 	</properties>
 	<repositories>
 		<repository>
 			<id>codelibs.org</id>
 			<name>CodeLibs Repository</name>
-			<url>http://maven.codelibs.org/</url>
+			<url>https://maven.codelibs.org/</url>
 		</repository>
 		<repository>
 			<name>oss.sonatype.org</name>
 			<id>oss.sonatype.org</id>
-			<url>http://oss.sonatype.org/content/groups/public/</url>
+			<url>https://oss.sonatype.org/content/groups/public/</url>
 		</repository>
 	</repositories>
 	<build>
@@ -112,7 +112,7 @@
 		<dependency>
 			<groupId>org.codelibs</groupId>
 			<artifactId>analyzers</artifactId>
-			<version>8.0.0.0</version>
+			<version>8.9.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.codelibs</groupId>
@@ -123,7 +123,7 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.12</version>
+			<version>4.13.2</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
